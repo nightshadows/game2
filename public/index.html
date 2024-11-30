@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roguelike</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #222;
+        }
+        #game {
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+
+    <!-- Load Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+
+    <!-- Load game classes -->
+    <script src="js/classes/Unit.js"></script>
+    <script src="js/classes/Enemy.js"></script>
+    <script src="js/classes/Player.js"></script>
+    <script src="js/classes/units/Warrior.js"></script>
+    <script src="js/classes/units/Archer.js"></script>
+    <script src="js/classes/Terrain.js"></script>
+
+    <!-- Load game scenes -->
+    <script src="js/scenes/GameScene.js"></script>
+
+    <!-- Load game configuration -->
+    <script src="js/config.js"></script>
+
+    <!-- Initialize game -->
+    <script src="js/game.js"></script>
+</body>
+</html>
